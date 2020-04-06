@@ -1,0 +1,17 @@
+---
+- name: Immediately turn swap off
+  command: dphys-swapfile swapoff
+
+- name: Immediately recover swap
+  command: dphys-swapfile uninstall
+
+- name: stop dphys-swapfile service
+  service:
+    name:  dphys-swapfile
+    state: stopped
+
+- name: stop and permanently disable dphys-swapfile service
+  service:
+    name:    dphys-swapfile
+    state:   stopped
+    enabled: no

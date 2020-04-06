@@ -1,0 +1,2 @@
+[dev]
+pi-dagobah ansible_host=192.168.1.9 ansible_ssh_user=pi

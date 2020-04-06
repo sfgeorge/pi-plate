@@ -1,0 +1,9 @@
+---
+- name: Playbook for Dagobah, the yoda Pi.
+
+  hosts: pi-dagobah
+
+  become: True
+
+  roles:
+  - { role: disable-swap, tags: ["disable-swap"] }
