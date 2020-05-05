@@ -3,7 +3,7 @@
 
   hosts: pi-dagobah
 
-  become: True
+  become: no
 
   roles:
-  - { role: disable-swap, tags: ["disable-swap"] }
+  - { role: disable-swap, become: yes, tags: ["disable-swap"] }
