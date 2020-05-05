@@ -1,0 +1,4 @@
+---
+- name: Install pip and pipenv
+  command: pip3 install --upgrade pip pipenv
+  tags: install

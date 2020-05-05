@@ -7,3 +7,4 @@
 
   roles:
   - { role: disable-swap, become: yes, tags: ["disable-swap"] }
+  - { role: pipenv,       become: no,  tags: ["pipenv"] }
